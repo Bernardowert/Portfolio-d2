@@ -5,11 +5,15 @@
 }
 
 
+
+
 @theme static{
 
       --color-black-01: #0a0a0a;
     
-      --max-width-containerGRID: 81.875rem;
+    --max-width-containerGRID: 81.875rem;
+
+
      --breakpoint-tablet: 40rem;
      --breakpoint-laptop: 64rem;
      --breakpoint-desktop: 80rem;
@@ -20,4 +24,9 @@ body{
    font-family: var(--font-inter);
    color: #fff;
    background-color: var(--color-black-01);
+}
+
+
+button{
+  cursor: pointer;
 }
