@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 
 const btnStyles = {
     btnPrimary: {
-        style: "text-black [&:hover,:focus]:bg-amber-600",
+        style: "text-black [&:hover,:focus]:opacity-70",
         isFlex: true
     },
     btnSecondary: {
@@ -40,9 +40,9 @@ export function Button({children, styleType,className,isLink,target,href}:Button
     const combinedClass = twMerge(defaultClass, className);
     return(
          isLink && href ?(
-            <Link target={target} href={href} className={combinedClass}>{children}</Link>
+            <Link target={target} href={href} className={`${isFlex ? "inline-flex" : "inline-block"} ${combinedClass}`}>{children}</Link>
          ): (
-            <button className={`${isFlex ? "inline-flex" : "inline-block"} ${combinedClass} transition-all ease-linear`}>{children}</button>
+            <button className={`${isFlex ? "inline-flex" : "inline-block"} ${combinedClass}`}>{children}</button>
          )
     )
 }
