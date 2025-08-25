@@ -1,18 +1,17 @@
 import { ContainerGRID } from "@/components/containerGRID";
+import { Skills } from "./skills";
+
+
 
 export function SectionSkills(){
     return(
-            <section className=" py-14 border-t border-white/20">
+        <section className=" py-14 bg-white-01">
           <ContainerGRID>
-             <div className="flex items-center justify-between">
-                <h2 className="font-bold text-3xl">Meus diferenciais</h2>
-                <p className="max-w-96 font-medium"><strong>Transformo design</strong> em páginas para a web com agilidade, qualidade e <strong>alta perfomance.</strong></p>
+             <div className="flex items-center justify-between flex-col gap-2 tablet:gap-0 tablet:flex-row">
+                <h2 className="font-bold text-black-01 text-3xl">Tecnologias</h2>
+                <p className="max-w-96 font-medium text-black-01 text-sm text-center tablet:text-right">Tecnologias que uso no meu dia a dia para criar páginas para a web com agilidade, qualidade e <strong>alta perfomance.</strong></p>
              </div>
-             <div>
-                  <div className="w-full max-w-96 h-52 bg-white rounded-2xl">
-                     exemplo
-                  </div>
-             </div>
+             <Skills/>
           </ContainerGRID>
          </section> 
     )
