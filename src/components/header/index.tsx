@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ContainerGRID } from "../containerGRID";
 import { NavListing } from "./navListing";
+import { Button } from "../buttons";
 
 export function Header(){
     return(
@@ -10,8 +11,10 @@ export function Header(){
                 <div className="flex items-center gap-11">
                      <NavListing/>
                      <button className="hidden">Menu Hamburuger</button>
-                     <Link href="#" className="inline-flex py-3 px-6 bg-white text-black rounded-2xl">Baixar Curriculo</Link>
+                     <Button isLink href="https://google.com.br" styleType="btnPrimary">Baixar Curriculo</Button>
                 </div>
+
+                {/* <Button styleType="btnPrimary">Entrar em contato</Button> */}
             </ContainerGRID>
         </header>
     )
